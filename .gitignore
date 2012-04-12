@@ -4,5 +4,4 @@
 # Use wildcards as well
 *~
 *.swp
-./tmp/cache/sass/
-./tmp/cache/assets/
+tmp/
