@@ -16,9 +16,9 @@ class EntriesController < ApplicationController
     @entry = Entry.find(params[:id])
     
     # adding additionals fields 
-    #@category = Category.find(@entry.category_id).name
-    #@type_name = Type.find(@entry.type_id).name
-    #@user_name = User.find(@entry.user_id).email
+    @category_name = Category.find(@entry.category_id).name
+    @type_name = Type.find(@entry.type_id).name
+    @user_name = User.find(@entry.user_id).email
     
     respond_to do |format|
       format.html # show.html.erb
@@ -34,7 +34,6 @@ class EntriesController < ApplicationController
     @categories = Category.all
     @types = Type.all
     
-    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @entry }
@@ -43,8 +42,10 @@ class EntriesController < ApplicationController
 
   # GET /entries/1/edit
   def edit
-    @categories = Category.all
+   
     @entry = Entry.find(params[:id])
+    @categories = Category.all
+    @types = Type.all
   end
 
   # POST /entries
