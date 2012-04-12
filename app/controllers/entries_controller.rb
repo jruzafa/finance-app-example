@@ -16,9 +16,9 @@ class EntriesController < ApplicationController
     @entry = Entry.find(params[:id])
     
     # adding additionals fields 
-    @category = Category.find(@entry.category.id).name
-    @type_name = Type.find(@entry.type_id).name
-    @user_name = User.find(@entry.user_id).email
+    #@category = Category.find(@entry.category_id).name
+    #@type_name = Type.find(@entry.type_id).name
+    #@user_name = User.find(@entry.user_id).email
     
     respond_to do |format|
       format.html # show.html.erb

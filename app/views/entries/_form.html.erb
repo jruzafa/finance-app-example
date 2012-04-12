@@ -25,17 +25,15 @@
   </div>
   
 
- <div class="field">
-   
-    <%= select("entry_category_id","id", @categories.map{|d| ["#{d.name}",d.id]}) %>
-  </div>
-
-
-
-
+	<div class="field">
+		<%= f.label :category_id %><br />
+		<%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]},{:include_blank => 'Category'}) %>
+	</div>
   <div class="field">
     <%= f.label :type_id %><br />
-    <%= select("entry_category_id","id", @types.map{|d| ["#{d.name}",d.id]}) %>
+    
+    <%= select("entry","type_id", @types.collect {|p| [ p.name, p.id ]},{:include_blank => 'Frequency'}) %>
+
   </div>
   <div class="actions">
     <%= f.submit %>
