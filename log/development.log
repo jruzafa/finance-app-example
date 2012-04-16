@@ -25272,3 +25272,68 @@ Served asset /users.js - 200 OK (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-12 20:05:19 +0200
 Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-04-16 22:39:50 +0200
+  Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" [0m
+Rendered entries/index.html.erb within layouts/application (51.3ms)
+Compiled jquery.js  (25ms)  (pid 8915)
+Compiled jquery_ujs.js  (0ms)  (pid 8915)
+Completed 200 OK in 212ms (Views: 208.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /categories.css - 200 OK (2ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /entries.css - 200 OK (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /types.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /entries.js - 200 OK (2ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /categories.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /types.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-16 22:39:51 +0200
+Served asset /users.js - 200 OK (1ms)
