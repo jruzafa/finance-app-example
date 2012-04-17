@@ -3,7 +3,7 @@ class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.all
+    @entries = Entry.find_by_user(current_user.id)
 
     # added
     @categories = Category.all
