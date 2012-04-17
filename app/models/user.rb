@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   include ActiveModel::MassAssignmentSecurity
 
   attr_accessor :password
+  #attr_accessor :id
   #attr_accessor :email
 
 

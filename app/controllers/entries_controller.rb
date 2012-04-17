@@ -36,7 +36,7 @@ class EntriesController < ApplicationController
   # GET /entries/new.json
   def new
     @entry = Entry.new
-    
+    # @user = current_user
     @categories = Category.all
     @types = Type.all
     
@@ -57,13 +57,11 @@ class EntriesController < ApplicationController
   # POST /entries
   # POST /entries.json
   def create
+    # assings a user_id with logged id user
+    params[:entry][:user_id] = current_user.id
+
     @entry = Entry.new(params[:entry])
-    #logger.info "id user old: #{@entry.user_id}"
 
-    # assign the user for the logged current user 
-    @entry.user_id = current_user.id
-
-    #logger.info "id user current: #{@entry.user_id}"
     respond_to do |format|
       if @entry.save
         format.html { redirect_to @entry, notice: 'Entry was successfully created.' }

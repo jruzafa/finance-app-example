@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# password in plain is : 123456
 user = User.create(:email => 'joe@example.com', :password => '123456')
 user_jhon = User.create(:email => 'jhon@example.com', :password => '654321')
 user_michelle = User.create(:email => 'michelle@example.com', :password => '876543')
@@ -25,5 +24,3 @@ Entry.create(:concept => 'Revision car', :amount => '150.6' ,:category_id =>  ho
 Entry.create(:concept => 'Children beedroms', :amount => '1000' ,:category_id =>  work.id ,:user_id => user.id, :type_id => type_once.id)
 Entry.create(:concept => 'Coffe with Michelle', :amount => '2.5' ,:category_id =>  home.id ,:user_id => user.id, :type_id => type_once.id)
 Entry.create(:concept => 'Insurance', :amount => '150,6' ,:category_id =>  home.id ,:user_id => user.id, :type_id => type_yearly.id)
-
-
