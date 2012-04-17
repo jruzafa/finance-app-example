@@ -1,6 +1,9 @@
-require 'digest'
+require 'digest/sha1'
 
 class User < ActiveRecord::Base
+
+  include ActiveModel::MassAssignmentSecurity
+
   attr_accessor :password
   #attr_accessor :email
 
@@ -17,7 +20,7 @@ class User < ActiveRecord::Base
   has_many :categories
   has_many :entries
   
-  # before save user encrypt password in MD5
+  # before save user encrypt password in SHA1
   before_save :encrypt_new_password
   
   def self.authenticate(email, password)
@@ -31,9 +34,13 @@ class User < ActiveRecord::Base
   end
 
   protected
+
     def encrypt_new_password
+      # if password from form is blank return nill
       return if password.blank?
-      self.hashed_password == encrypt(self.password)    
+
+      # if password is set encrypted and keep in hashed_password
+      self.hashed_password = encrypt(password)    
     end
     
     def password_required?
