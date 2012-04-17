@@ -15,20 +15,22 @@
     <%= f.label :concept %><br />
     <%= f.text_field :concept %>
   </div>
+  
   <div class="field">
     <%= f.label :amount %><br />
     <%= f.text_field :amount %>
   </div>
+
   <div class="field">
     <%= f.label :user_id %><br />
     <%= f.number_field :user_id %>
   </div>
   
-
 	<div class="field">
 		<%= f.label :category_id %><br />
 		<%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]},{:include_blank => 'Category'}) %>
 	</div>
+
   <div class="field">
     <%= f.label :type_id %><br />
     

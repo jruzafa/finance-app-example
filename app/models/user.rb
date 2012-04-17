@@ -2,8 +2,10 @@ require 'digest'
 
 class User < ActiveRecord::Base
   attr_accessor :password
-  
- validates :email, :uniqueness => true,
+  #attr_accessor :email
+
+
+  validates :email, :uniqueness => true,
             :length => { :within => 5..50 },
             :format => { :with => /^[^@][\w.-]+@[\w.-]+[.][a-z]{2,4}$/i }
 
@@ -18,7 +20,7 @@ class User < ActiveRecord::Base
   # before save user encrypt password in MD5
   before_save :encrypt_new_password
   
-  def self.authenticated?(email,password)
+  def self.authenticate(email, password)
     user = find_by_email(email)
     return user if user && user.authenticated?(password)
   end
@@ -27,11 +29,11 @@ class User < ActiveRecord::Base
   def authenticated?(password)
     self.hashed_password == encrypt(password)
   end
-  
+
   protected
     def encrypt_new_password
       return if password.blank?
-      self.hashed_password == encrypt(password)    
+      self.hashed_password == encrypt(self.password)    
     end
     
     def password_required?

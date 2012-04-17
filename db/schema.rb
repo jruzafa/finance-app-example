@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120412163550) do
+ActiveRecord::Schema.define(:version => 20120417171534) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -72,7 +72,6 @@ ActiveRecord::Schema.define(:version => 20120412163550) do
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "hashed_password"
-    t.boolean  "is_active"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div id="user_bar">
+	<%= link_to t('type'), types_path %> |
+		<%= link_to t('category'), categories_path %> |
+		<%= link_to t('entry'), entries_path %> |
+	<% if logged_in? %>
+		
+		<%= link_to t('entries.new_entry'), new_entry_path %> |
+		<%= link_to t('users.edit_password'), edit_user_path(current_user) %> |
+		<%= link_to t('sessions.logout'), logout_path %>
+	<% else %>
+		<%= link_to t('sessions.login'), login_path %>
+	<% end %>
+	 <%= content_tag(:p, notice, :class => 'notice') if notice.present? %>
+    <%= content_tag(:p, alert, :class => 'alert') if alert.present? %>
+</div>
+	<%= yield %>
 </body>
 </html>

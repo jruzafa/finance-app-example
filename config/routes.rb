@@ -1,6 +1,6 @@
 Expenses::Application.routes.draw do
   
-  #root :to => 'entries#index'
+  root :to => 'entries#index'
   
   resources :types
 
@@ -11,7 +11,7 @@ Expenses::Application.routes.draw do
   resources :users
   
   resource :session
-
+  
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
   # The priority is based upon order of creation:

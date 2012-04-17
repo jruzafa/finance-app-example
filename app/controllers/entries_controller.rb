@@ -1,8 +1,14 @@
 class EntriesController < ApplicationController
+  
   # GET /entries
   # GET /entries.json
   def index
     @entries = Entry.all
+
+    # added
+    @categories = Category.all
+    @types = Type.all
+    #@users = User.a
 
     respond_to do |format|
       format.html # index.html.erb
@@ -52,7 +58,12 @@ class EntriesController < ApplicationController
   # POST /entries.json
   def create
     @entry = Entry.new(params[:entry])
+    #logger.info "id user old: #{@entry.user_id}"
 
+    # assign the user for the logged current user 
+    @entry.user_id = current_user.id
+
+    #logger.info "id user current: #{@entry.user_id}"
     respond_to do |format|
       if @entry.save
         format.html { redirect_to @entry, notice: 'Entry was successfully created.' }

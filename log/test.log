@@ -334,3 +334,171 @@ SQLite3::SQLException: table users has no column named password: INSERT INTO "us
   [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
   [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-12 16:57:36', '2012-04-12 16:57:36', 980190962)
 SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-12 16:57:36', '2012-04-12 16:57:36', 980190962)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "expenses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "expenses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "expenses" ("concept", "amount", "created_at", "updated_at", "id") VALUES (NULL, 1.5, '2012-04-17 13:11:22', '2012-04-17 13:11:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)
+SQLite3::SQLException: table users has no column named password: INSERT INTO "users" ("email", "password", "is_active", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', '2012-04-17 13:11:22', '2012-04-17 13:11:22', 980190962)

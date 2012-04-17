@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
+  name: Home
   user_id: 1
 
 two:
-  name: MyString
+  name: Car
+  user_id: 1
+
+two:
+  name: Car
   user_id: 1
