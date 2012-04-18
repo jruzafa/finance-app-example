@@ -3,13 +3,12 @@ class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.find_by_user(current_user.id)
+    @entries = Entry.where("user_id = #{current_user.id}").all
 
     # added
     @categories = Category.all
     @types = Type.all
-    #@users = User.a
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @entries }
