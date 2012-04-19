@@ -6,14 +6,20 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-user = User.create(:email => 'joe@example.com', :password => '123456')
-user_jhon = User.create(:email => 'jhon@example.com', :password => '654321')
-user_michelle = User.create(:email => 'michelle@example.com', :password => '876543')
 
-home = Category.create(:name => 'Home', :user_id => user.id)
-work = Category.create(:name => 'Work', :user_id => user.id)
-Category.create(:name => 'Leisure', :user_id => user.id)
-Category.create(:name => 'Get away', :user_id => user.id)
+jhon = User.create(:email => 'jhon@example.com', :password => '654321')
+michelle = User.create(:email => 'michelle@example.com', :password => '876543')
+
+#home = Category.create(:name => 'Home', :user_id => user.id)
+#work = Category.create(:name => 'Work', :user_id => user.id)
+#Category.create(:name => 'Leisure', :user_id => user.id)
+#Category.create(:name => 'Get away', :user_id => user.id)
+categories = Category.create([{:name => 'Home'} , {:name => 'Work'} , {:name => 'Leisure'}])
+
+user = User.create(:email => 'joe@example.com', :password => '123456', :categories => categories)
+
+Category.create(:name => 'Leisure JHON', :user_id => jhon.id)
+Category.create(:name => 'Get away JHON', :user_id => jhon.id)
 
 type_weekly = Type.create(:name => 'Weekly', :user_id => user.id)
 type_monthly = Type.create(:name => 'Monthly', :user_id => user.id)

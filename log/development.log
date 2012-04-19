@@ -22247,3 +22247,273 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-19 22:01:18 +0200
 Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120212230924)
+Migrating to CreateTypes (20120212233734)
+Migrating to CreateCategories (20120212235410)
+Migrating to CreateEntries (20120213001458)
+Migrating to CreateExpenses (20120213001714)
+Migrating to AddSessionsTable (20120412154118)
+Migrating to RenamePasswordToHashedPassword (20120412163550)
+Migrating to RemoveIsActive (20120417171534)
+Migrating to AddUserIdToCategories (20120419205803)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "categories" ADD "user_id" integer[0m
+SQLite3::SQLException: duplicate column name: user_id: ALTER TABLE "categories" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'joe@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+  [1m[36mSQL (65.1ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:35 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 19 Apr 2012 21:03:35 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["name", "Get away"], ["updated_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["name", "Leisure JHON"], ["updated_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["name", "Get away JHON"], ["updated_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 19 Apr 2012 21:03:36 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (32.6ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 150.6], ["category_id", 7], ["concept", "Revision car"], ["created_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["type_id", 8], ["updated_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 1000.0], ["category_id", 8], ["concept", "Children beedroms"], ["created_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["type_id", 8], ["updated_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 2.5], ["category_id", 7], ["concept", "Coffe with Michelle"], ["created_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["type_id", 8], ["updated_at", Thu, 19 Apr 2012 21:03:37 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 150.0], ["category_id", 7], ["concept", "Insurance"], ["created_at", Thu, 19 Apr 2012 21:03:38 UTC +00:00], ["type_id", 7], ["updated_at", Thu, 19 Apr 2012 21:03:38 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'joe@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:46 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 19 Apr 2012 21:03:46 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["name", "Get away"], ["updated_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["name", "Leisure JHON"], ["updated_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["name", "Get away JHON"], ["updated_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 19 Apr 2012 21:03:47 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 150.6], ["category_id", 13], ["concept", "Revision car"], ["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["type_id", 12], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 1000.0], ["category_id", 14], ["concept", "Children beedroms"], ["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["type_id", 12], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 2.5], ["category_id", 13], ["concept", "Coffe with Michelle"], ["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["type_id", 12], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 150.0], ["category_id", 13], ["concept", "Insurance"], ["created_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["type_id", 11], ["updated_at", Thu, 19 Apr 2012 21:03:48 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'joe@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:05:19 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 19 Apr 2012 21:05:19 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:05:19 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 19 Apr 2012 21:05:19 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["name", "Get away"], ["updated_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["name", "Leisure JHON"], ["updated_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["name", "Get away JHON"], ["updated_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 19 Apr 2012 21:05:20 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 150.6], ["category_id", 19], ["concept", "Revision car"], ["created_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["type_id", 16], ["updated_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 1000.0], ["category_id", 20], ["concept", "Children beedroms"], ["created_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["type_id", 16], ["updated_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 2.5], ["category_id", 19], ["concept", "Coffe with Michelle"], ["created_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["type_id", 16], ["updated_at", Thu, 19 Apr 2012 21:05:21 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 150.0], ["category_id", 19], ["concept", "Insurance"], ["created_at", Thu, 19 Apr 2012 21:05:22 UTC +00:00], ["type_id", 15], ["updated_at", Thu, 19 Apr 2012 21:05:22 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (208.2ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (124.3ms)[0m  CREATE INDEX "index_categories_on_user_id" ON "categories" ("user_id")
+  [1m[36m (153.5ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (91.3ms)[0m  [1mCREATE INDEX "index_entries_on_category_id" ON "entries" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (224.8ms)[0m  CREATE INDEX "index_entries_on_type_id" ON "entries" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_entries_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (192.0ms)[0m  CREATE INDEX "index_entries_on_user_id" ON "entries" ("user_id")
+  [1m[36m (674.3ms)[0m  [1mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (114.2ms)[0m  [1mCREATE INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (113.8ms)[0m  CREATE INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("expenses")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_expenses_on_type_id')
+  [1m[36m (0.2ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (212.4ms)[0m  CREATE INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")
+  [1m[36m (121.0ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (91.4ms)[0m  [1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (120.0ms)[0m  CREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")
+  [1m[36m (142.1ms)[0m  [1mCREATE TABLE "types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("types")
+  [1m[36m (124.7ms)[0m  [1mCREATE INDEX "index_types_on_user_id" ON "types" ("user_id")[0m
+  [1m[35m (240.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "hashed_password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (97.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (91.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (160.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417171534')[0m
+  [1m[35m (80.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412163550')
+  [1m[36m (80.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212233734')[0m
+  [1m[35m (269.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120213001458')
+  [1m[36m (113.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212230924')[0m
+  [1m[35m (80.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412154118')
+  [1m[36m (80.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120213001714')[0m
+  [1m[35m (192.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120212235410')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'joe@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["email", "joe@example.com"], ["hashed_password", "7c4a8d09ca3762af61e59520943dc26494f8941b"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["email", "jhon@example.com"], ["hashed_password", "dd5fef9c1c1da1394d6d34b248c51be2ad740840"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["email", "michelle@example.com"], ["hashed_password", "f83a161e0038478b20d8dd0195e34cee3461dbc7"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["name", "Get away"], ["updated_at", Thu, 19 Apr 2012 21:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["name", "Leisure JHON"], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 2]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["name", "Get away JHON"], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 2]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 150.6], ["category_id", 1], ["concept", "Revision car"], ["created_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["type_id", 4], ["updated_at", Thu, 19 Apr 2012 21:06:01 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 1000.0], ["category_id", 2], ["concept", "Children beedroms"], ["created_at", Thu, 19 Apr 2012 21:06:02 UTC +00:00], ["type_id", 4], ["updated_at", Thu, 19 Apr 2012 21:06:02 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["amount", 2.5], ["category_id", 1], ["concept", "Coffe with Michelle"], ["created_at", Thu, 19 Apr 2012 21:06:02 UTC +00:00], ["type_id", 4], ["updated_at", Thu, 19 Apr 2012 21:06:02 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 150.0], ["category_id", 1], ["concept", "Insurance"], ["created_at", Thu, 19 Apr 2012 21:06:02 UTC +00:00], ["type_id", 3], ["updated_at", Thu, 19 Apr 2012 21:06:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (112.9ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (91.3ms)[0m  CREATE INDEX "index_categories_on_user_id" ON "categories" ("user_id")
+  [1m[36m (160.5ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (158.2ms)[0m  [1mCREATE INDEX "index_entries_on_category_id" ON "entries" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (213.6ms)[0m  CREATE INDEX "index_entries_on_type_id" ON "entries" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_entries_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (114.3ms)[0m  CREATE INDEX "index_entries_on_user_id" ON "entries" ("user_id")
+  [1m[36m (185.0ms)[0m  [1mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (91.4ms)[0m  [1mCREATE INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (125.1ms)[0m  CREATE INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("expenses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_expenses_on_type_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (181.0ms)[0m  CREATE INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")
+  [1m[36m (109.9ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (213.5ms)[0m  [1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (91.7ms)[0m  CREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")
+  [1m[36m (213.5ms)[0m  [1mCREATE TABLE "types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("types")
+  [1m[36m (91.2ms)[0m  [1mCREATE INDEX "index_types_on_user_id" ON "types" ("user_id")[0m
+  [1m[35m (135.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "hashed_password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (192.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (102.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (90.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417171534')[0m
+  [1m[35m (102.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412163550')
+  [1m[36m (201.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212233734')[0m
+  [1m[35m (102.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120213001458')
+  [1m[36m (352.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212230924')[0m
+  [1m[35m (345.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412154118')
+  [1m[36m (91.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120213001714')[0m
+  [1m[35m (80.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120212235410')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'joe@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:51 UTC +00:00], ["email", "joe@example.com"], ["hashed_password", "7c4a8d09ca3762af61e59520943dc26494f8941b"], ["updated_at", Thu, 19 Apr 2012 21:08:51 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:51 UTC +00:00], ["email", "jhon@example.com"], ["hashed_password", "dd5fef9c1c1da1394d6d34b248c51be2ad740840"], ["updated_at", Thu, 19 Apr 2012 21:08:51 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["email", "michelle@example.com"], ["hashed_password", "f83a161e0038478b20d8dd0195e34cee3461dbc7"], ["updated_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["name", "Leisure JHON"], ["updated_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["user_id", 2]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["name", "Get away JHON"], ["updated_at", Thu, 19 Apr 2012 21:08:52 UTC +00:00], ["user_id", 2]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 19 Apr 2012 21:08:53 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (145.9ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (91.2ms)[0m  CREATE INDEX "index_categories_on_user_id" ON "categories" ("user_id")
+  [1m[36m (151.0ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (91.2ms)[0m  [1mCREATE INDEX "index_entries_on_category_id" ON "entries" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (135.7ms)[0m  CREATE INDEX "index_entries_on_type_id" ON "entries" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_entries_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (212.9ms)[0m  CREATE INDEX "index_entries_on_user_id" ON "entries" ("user_id")
+  [1m[36m (179.1ms)[0m  [1mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (124.5ms)[0m  [1mCREATE INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (214.3ms)[0m  CREATE INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("expenses")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_expenses_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (259.1ms)[0m  CREATE INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")
+  [1m[36m (347.0ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (126.2ms)[0m  [1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (419.2ms)[0m  CREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")
+  [1m[36m (497.4ms)[0m  [1mCREATE TABLE "types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("types")
+  [1m[36m (158.0ms)[0m  [1mCREATE INDEX "index_types_on_user_id" ON "types" ("user_id")[0m
+  [1m[35m (119.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "hashed_password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (124.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (80.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (223.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417171534')[0m
+  [1m[35m (80.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412163550')
+  [1m[36m (80.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212233734')[0m
+  [1m[35m (80.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120213001458')
+  [1m[36m (169.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212230924')[0m
+  [1m[35m (80.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412154118')
+  [1m[36m (80.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120213001714')[0m
+  [1m[35m (124.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120212235410')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:09:53 UTC +00:00], ["email", "jhon@example.com"], ["hashed_password", "dd5fef9c1c1da1394d6d34b248c51be2ad740840"], ["updated_at", Thu, 19 Apr 2012 21:09:53 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:09:53 UTC +00:00], ["email", "michelle@example.com"], ["hashed_password", "f83a161e0038478b20d8dd0195e34cee3461dbc7"], ["updated_at", Thu, 19 Apr 2012 21:09:53 UTC +00:00]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'joe@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["email", "joe@example.com"], ["hashed_password", "7c4a8d09ca3762af61e59520943dc26494f8941b"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mUPDATE "categories" SET "user_id" = 3, "updated_at" = '2012-04-19 21:09:54.564549' WHERE "categories"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "categories" SET "user_id" = 3, "updated_at" = '2012-04-19 21:09:54.566299' WHERE "categories"."id" = 2
+  [1m[36m (0.1ms)[0m  [1mUPDATE "categories" SET "user_id" = 3, "updated_at" = '2012-04-19 21:09:54.567527' WHERE "categories"."id" = 3[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["name", "Leisure JHON"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["name", "Get away JHON"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 19 Apr 2012 21:09:54 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:09:55 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 19 Apr 2012 21:09:55 UTC +00:00], ["user_id", 3]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Apr 2012 21:09:55 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 19 Apr 2012 21:09:55 UTC +00:00], ["user_id", 3]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 19 Apr 2012 21:09:55 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 19 Apr 2012 21:09:55 UTC +00:00], ["user_id", 3]]
