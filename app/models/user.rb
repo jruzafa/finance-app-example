@@ -20,6 +20,8 @@ class User < ActiveRecord::Base
 
   has_many :categories
   has_many :entries
+  has_many :expenses
+  has_many :types
   
   # before save user encrypt password in SHA1
   before_save :encrypt_new_password

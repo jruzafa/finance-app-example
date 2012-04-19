@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def create
     
-    Rails.logger.info "entra en create de sessions"
+    #Rails.logger.info "entra en create de sessions"
 
 
     if user = User.authenticate(params[:email], params[:password])

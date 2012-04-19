@@ -22,7 +22,7 @@ gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
-
+gem 'rb-readline'
 # Deploy with Capistrano
 # gem 'capistrano'
 
