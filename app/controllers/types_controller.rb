@@ -1,8 +1,11 @@
 class TypesController < ApplicationController
+  
+  before_filter :authenticate
+
   # GET /types
   # GET /types.json
   def index
-    @types = Type.all
+    @types = Type.where("user_id = #{current_user.id}").all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +16,7 @@ class TypesController < ApplicationController
   # GET /types/1
   # GET /types/1.json
   def show
-    @type = Type.find(params[:id])
+    @type = Type.where("user_id = #{current_user.id}").find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -40,6 +43,7 @@ class TypesController < ApplicationController
   # POST /types
   # POST /types.json
   def create
+    params[:type][:user_id] = current_user.id
     @type = Type.new(params[:type])
 
     respond_to do |format|

@@ -3,7 +3,6 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>User</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,7 +11,6 @@
 <% @types.each do |type| %>
   <tr>
     <td><%= type.name %></td>
-    <td><%= type.user_id %></td>
     <td><%= link_to 'Show', type %></td>
     <td><%= link_to 'Edit', edit_type_path(type) %></td>
     <td><%= link_to 'Destroy', type, confirm: 'Are you sure?', method: :delete %></td>

@@ -1,5 +1,7 @@
 class EntriesController < ApplicationController
   
+  before_filter :authenticate
+
   # GET /entries
   # GET /entries.json
   def index
@@ -41,9 +43,9 @@ class EntriesController < ApplicationController
   # GET /entries/new.json
   def new
     @entry = Entry.new
-    # @user = current_user
-    @categories = Category.all
-    @types = Type.all
+   
+    @categories = Category.where("user_id = #{current_user.id}").all
+    @types = Type.where("user_id = #{current_user.id}").all
     
     respond_to do |format|
       format.html # new.html.erb
@@ -54,9 +56,23 @@ class EntriesController < ApplicationController
   # GET /entries/1/edit
   def edit
    
-    @entry = Entry.find(params[:id])
-    @categories = Category.all
-    @types = Type.all
+    
+#@entry = Entry.exists?(:user_id => current_user.id) ? Entry.where("user_id = #{current_user.id}").find(params[:id]) : nil
+
+    #if Entry.where("user_id = #{current_user.id}").find(params[:id]).count == 0
+    #  redirect_to "http://www.google.com"
+      
+    #else
+      #@entry = Entry.find(params[:id])
+      #@categories = Category.all
+      @entry = Entry.where("user_id = #{current_user.id}").find(params[:id])
+      #@types = Type.where("user_id = #{current_user.id}").find(params[:id])
+      #@types = Type.all
+      @categories = Category.where("user_id = #{current_user.id}").all
+      @types = Type.where("user_id = #{current_user.id}").all
+    #end
+
+
   end
 
   # POST /entries

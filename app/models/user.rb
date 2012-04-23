@@ -2,12 +2,7 @@ require 'digest/sha1'
 
 class User < ActiveRecord::Base
 
-  include ActiveModel::MassAssignmentSecurity
-
   attr_accessor :password
-  #attr_accessor :id
-  #attr_accessor :email
-
 
   validates :email, :uniqueness => true,
             :length => { :within => 5..50 },

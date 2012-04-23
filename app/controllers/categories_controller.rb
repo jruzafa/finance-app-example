@@ -1,8 +1,12 @@
 class CategoriesController < ApplicationController
+
+  before_filter :authenticate
+
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
+   
+    @categories = Category.where("user_id = #{current_user.id}").all  
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,8 +17,8 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @category = Category.find(params[:id])
-    @user = User.find(@category.user_id)
+    @category = Category.where("user_id = #{current_user.id}").find(params[:id])
+   
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @category }
@@ -34,12 +38,24 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1/edit
   def edit
-    @category = Category.find(params[:id])
+    #where("user_id = #{current_user.id}")
+   
+  #  @prueba = Category.category_user(params[:id])
+  #  if Category.category_user(params[:id])
+     # @category = Category.where("user_id = #{current_user.id}").find(params[:id])
+   # else
+    #  redirect_to categories_path
+    #end
+
+     @category = Category.where("user_id = #{current_user.id}").find(params[:id])
+
   end
 
   # POST /categories
   # POST /categories.json
   def create
+    params[:category][:user_id] = current_user.id
+
     @category = Category.new(params[:category])
 
     respond_to do |format|
