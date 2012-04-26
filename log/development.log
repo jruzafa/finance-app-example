@@ -65728,3 +65728,2967 @@ Served asset /types.js - 304 Not Modified (0ms)
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:49:25 +0200
 Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 131ms (Views: 94.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /categories.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /expenses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /scaffold.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /types.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /expenses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /entries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /categories.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /types.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:55 +0200
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:57:57 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 13.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:58 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 73ms (Views: 13.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:57:59 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 62ms (Views: 32.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 18.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:00 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 119ms (Views: 23.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 15.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 94ms (Views: 43.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:01 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /types.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /types.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-26 23:58:02 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:16:27 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 126ms (Views: 69.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:28 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:16:38 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 75ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /types.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /expenses.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:39 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+  Processing by ExpensesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE (user_id = 1)
+  [1m[36mType Load (0.2ms)[0m  [1mSELECT "types".* FROM "types" WHERE (user_id = 1)[0m
+Rendered expenses/_form.html.erb (23.6ms)
+Rendered expenses/new.html.erb within layouts/application (199.0ms)
+Completed 200 OK in 359ms (Views: 236.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:40 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:41 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/expenses" for 127.0.0.1 at 2012-04-27 00:16:49 +0200
+  Processing by ExpensesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zlUhw4RPSLnS2vNzIHL523FyoMU+V4NtGjla6O8ejCY=", "expense"=>{"concept"=>"dsadas", "amount"=>"123", "category_id"=>"4", "type_id"=>""}, "commit"=>"Create Expense"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (192.2ms)[0m  [1mINSERT INTO "expenses" ("amount", "category_id", "concept", "created_at", "type_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 123.0], ["category_id", 4], ["concept", "dsadas"], ["created_at", Thu, 26 Apr 2012 22:16:49 UTC +00:00], ["type_id", nil], ["updated_at", Thu, 26 Apr 2012 22:16:49 UTC +00:00], ["user_id", 1]]
+Redirected to http://127.0.0.1:3000/expenses/1
+Completed 302 Found in 466ms
+
+
+Started GET "/expenses/1" for 127.0.0.1 at 2012-04-27 00:16:49 +0200
+  Processing by ExpensesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExpense Load (0.2ms)[0m  [1mSELECT "expenses".* FROM "expenses" WHERE "expenses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered expenses/show.html.erb within layouts/application (135.8ms)
+Completed 200 OK in 268ms (Views: 177.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /categories.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:16:50 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2012-04-27 00:16:52 +0200
+  Processing by ExpensesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExpense Load (0.2ms)[0m  [1mSELECT "expenses".* FROM "expenses" WHERE (user_id = 1)[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mType Load (0.3ms)[0m  [1mSELECT "types".* FROM "types" [0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 4]]
+Rendered expenses/index.html.erb within layouts/application (46.8ms)
+Completed 500 Internal Server Error in 171ms
+
+ActionView::Template::Error (Couldn't find Type without an ID):
+    16:     <td><%= expense.concept %></td>
+    17:     <td><%= expense.amount %></td>
+    18:     <td><%= Category.find(expense.category_id).name %></td>
+    19:     <td><%= Type.find(expense.type_id).name %></td>
+    20:     <td><%= link_to 'Show', expense %></td>
+    21:     <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    22:     <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
+  app/views/expenses/index.html.erb:19:in `block in _app_views_expenses_index_html_erb__332982504_90247390'
+  app/views/expenses/index.html.erb:14:in `each'
+  app/views/expenses/index.html.erb:14:in `_app_views_expenses_index_html_erb__332982504_90247390'
+  app/controllers/expenses_controller.rb:21:in `index'
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (38.4ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2012-04-27 00:16:56 +0200
+  Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExpense Load (0.3ms)[0m  SELECT "expenses".* FROM "expenses" WHERE (user_id = 1)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" 
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 4]]
+Rendered expenses/index.html.erb within layouts/application (75.2ms)
+Completed 500 Internal Server Error in 181ms
+
+ActionView::Template::Error (Couldn't find Type without an ID):
+    16:     <td><%= expense.concept %></td>
+    17:     <td><%= expense.amount %></td>
+    18:     <td><%= Category.find(expense.category_id).name %></td>
+    19:     <td><%= Type.find(expense.type_id).name %></td>
+    20:     <td><%= link_to 'Show', expense %></td>
+    21:     <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    22:     <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
+  app/views/expenses/index.html.erb:19:in `block in _app_views_expenses_index_html_erb__332982504_90247390'
+  app/views/expenses/index.html.erb:14:in `each'
+  app/views/expenses/index.html.erb:14:in `_app_views_expenses_index_html_erb__332982504_90247390'
+  app/controllers/expenses_controller.rb:21:in `index'
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2012-04-27 00:17:05 +0200
+  Processing by ExpensesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExpense Load (0.3ms)[0m  [1mSELECT "expenses".* FROM "expenses" WHERE (user_id = 1)[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mType Load (0.2ms)[0m  [1mSELECT "types".* FROM "types" [0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 4]]
+Rendered expenses/index.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 201ms
+
+ActionView::Template::Error (Couldn't find Type without an ID):
+    16:     <td><%= expense.concept %></td>
+    17:     <td><%= expense.amount %></td>
+    18:     <td><%= Category.find(expense.category_id).name %></td>
+    19:     <td><%= Type.find(expense.type_id).name %></td>
+    20:     <td><%= link_to 'Show', expense %></td>
+    21:     <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    22:     <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
+  app/views/expenses/index.html.erb:19:in `block in _app_views_expenses_index_html_erb__332982504_90247390'
+  app/views/expenses/index.html.erb:14:in `each'
+  app/views/expenses/index.html.erb:14:in `_app_views_expenses_index_html_erb__332982504_90247390'
+  app/controllers/expenses_controller.rb:21:in `index'
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2012-04-27 00:18:46 +0200
+  Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExpense Load (0.3ms)[0m  SELECT "expenses".* FROM "expenses" WHERE (user_id = 1)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mType Load (0.3ms)[0m  SELECT "types".* FROM "types" 
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 4]]
+Rendered expenses/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 134ms
+
+ActionView::Template::Error (Couldn't find Type without an ID):
+    16:     <td><%= expense.concept %></td>
+    17:     <td><%= expense.amount %></td>
+    18:     <td><%= Category.find(expense.category_id).name %></td>
+    19:     <td><%= Type.find(expense.type_id).name %></td>
+    20:     <td><%= link_to 'Show', expense %></td>
+    21:     <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    22:     <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
+  app/views/expenses/index.html.erb:19:in `block in _app_views_expenses_index_html_erb__332982504_90247390'
+  app/views/expenses/index.html.erb:14:in `each'
+  app/views/expenses/index.html.erb:14:in `_app_views_expenses_index_html_erb__332982504_90247390'
+  app/controllers/expenses_controller.rb:21:in `index'
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2012-04-27 00:18:49 +0200
+  Processing by ExpensesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mExpense Load (0.3ms)[0m  [1mSELECT "expenses".* FROM "expenses" WHERE (user_id = 1)[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mType Load (0.2ms)[0m  [1mSELECT "types".* FROM "types" [0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 4]]
+Rendered expenses/index.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 124ms
+
+ActionView::Template::Error (Couldn't find Type without an ID):
+    16:     <td><%= expense.concept %></td>
+    17:     <td><%= expense.amount %></td>
+    18:     <td><%= Category.find(expense.category_id).name %></td>
+    19:     <td><%= Type.find(expense.type_id).name %></td>
+    20:     <td><%= link_to 'Show', expense %></td>
+    21:     <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    22:     <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
+  app/views/expenses/index.html.erb:19:in `block in _app_views_expenses_index_html_erb__332982504_90247390'
+  app/views/expenses/index.html.erb:14:in `each'
+  app/views/expenses/index.html.erb:14:in `_app_views_expenses_index_html_erb__332982504_90247390'
+  app/controllers/expenses_controller.rb:21:in `index'
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.4ms)
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started GET "/expenses/delete/1" for 127.0.0.1 at 2012-04-27 00:19:36 +0200
+
+ActionController::RoutingError (No route matches [GET] "/expenses/delete/1"):
+  
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/expense/delete/1" for 127.0.0.1 at 2012-04-27 00:19:40 +0200
+
+ActionController::RoutingError (No route matches [GET] "/expense/delete/1"):
+  
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/expense/1/delete" for 127.0.0.1 at 2012-04-27 00:19:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/expense/1/delete"):
+  
+
+Rendered /home/jose/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2012-04-27 00:20:25 +0200
+  Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mExpense Load (0.2ms)[0m  SELECT "expenses".* FROM "expenses" WHERE (user_id = 1)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" 
+Rendered expenses/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 91ms (Views: 33.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:25 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:25 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:25 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:25 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:25 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:20:26 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 1)
+Rendered types/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 16.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:46 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/types/new" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+  Processing by TypesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered types/_form.html.erb (50.4ms)
+Rendered types/new.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 170ms (Views: 123.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:47 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:48 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+  Processing by TypesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mType Load (0.2ms)[0m  [1mSELECT "types".* FROM "types" WHERE (user_id = 1)[0m
+Rendered types/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 14.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /scaffold.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:24:49 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 105ms (Views: 37.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:25:20 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+  Processing by EntriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE (user_id = 1)[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mType Load (0.2ms)[0m  [1mSELECT "types".* FROM "types" [0m
+Rendered entries/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 173ms (Views: 26.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:36 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:37 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:31:51 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:31:52 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1[0m
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:31:55 +0200
+  Processing by TypesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mType Load (0.3ms)[0m  [1mSELECT "types".* FROM "types" WHERE (user_id = 1)[0m
+Rendered types/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 16.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:56 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 55ms (Views: 23.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /scaffold.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:57 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:31:58 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 98ms (Views: 28.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:31:59 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 138ms (Views: 34.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 119ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 79ms (Views: 46.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 74ms (Views: 42.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:32:00 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (218.2ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (137.6ms)[0m  CREATE INDEX "index_categories_on_user_id" ON "categories" ("user_id")
+  [1m[36m (118.6ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (91.2ms)[0m  [1mCREATE INDEX "index_entries_on_category_id" ON "entries" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (91.1ms)[0m  CREATE INDEX "index_entries_on_type_id" ON "entries" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_entries_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (225.3ms)[0m  CREATE INDEX "index_entries_on_user_id" ON "entries" ("user_id")
+  [1m[36m (121.3ms)[0m  [1mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (91.3ms)[0m  [1mCREATE INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (91.5ms)[0m  CREATE INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("expenses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_expenses_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (192.2ms)[0m  CREATE INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")
+  [1m[36m (121.0ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (91.3ms)[0m  [1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (91.9ms)[0m  CREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")
+  [1m[36m (169.0ms)[0m  [1mCREATE TABLE "types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("types")
+  [1m[36m (91.3ms)[0m  [1mCREATE INDEX "index_types_on_user_id" ON "types" ("user_id")[0m
+  [1m[35m (124.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "hashed_password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (203.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (80.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (91.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120426202720')[0m
+  [1m[35m (124.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412163550')
+  [1m[36m (190.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212233734')[0m
+  [1m[35m (80.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120213001458')
+  [1m[36m (80.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212230924')[0m
+  [1m[35m (80.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412154118')
+  [1m[36m (158.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417171534')[0m
+  [1m[35m (80.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120212235410')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:16 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:32:16 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:16 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:32:16 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:16 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:32:16 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:32:17 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["email", "jhon@example.com"], ["hashed_password", "dd5fef9c1c1da1394d6d34b248c51be2ad740840"], ["updated_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  UPDATE "categories" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.742722' WHERE "categories"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "categories" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.744239' WHERE "categories"."id" = 2[0m
+  [1m[35m (0.1ms)[0m  UPDATE "categories" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.745042' WHERE "categories"."id" = 3
+  [1m[36m (0.8ms)[0m  [1mUPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.745898' WHERE "types"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.747409' WHERE "types"."id" = 2
+  [1m[36m (0.1ms)[0m  [1mUPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.748464' WHERE "types"."id" = 3[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:32:18.749246' WHERE "types"."id" = 4
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00], ["email", "michelle@example.com"], ["hashed_password", "f83a161e0038478b20d8dd0195e34cee3461dbc7"], ["updated_at", Thu, 26 Apr 2012 22:32:18 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mUPDATE "categories" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.831772' WHERE "categories"."id" = 4[0m
+  [1m[35m (0.1ms)[0m  UPDATE "categories" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.832652' WHERE "categories"."id" = 5
+  [1m[36m (0.1ms)[0m  [1mUPDATE "categories" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.833420' WHERE "categories"."id" = 6[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.834235' WHERE "types"."id" = 5
+  [1m[36m (1.0ms)[0m  [1mUPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.835039' WHERE "types"."id" = 6[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.836853' WHERE "types"."id" = 7
+  [1m[36m (0.1ms)[0m  [1mUPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:32:18.837690' WHERE "types"."id" = 8[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (10.8ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:32:26 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:32:27 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:32:28 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:32:28 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:32:28 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:32:28 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1[0m
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:33:01 +0200
+  Processing by TypesController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 21ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-04-27 00:33:01 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 218ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /categories.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /entries.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /scaffold.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /expenses.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /types.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /categories.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /expenses.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /entries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /types.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /users.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:03 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2012-04-27 00:33:14 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d9m1R6b2BaN3u/5yA5nae1qDdmdOKZmq82fg1owFsbc=", "email"=>"jhon@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 84ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:33:14 +0200
+  Processing by EntriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE (user_id = 1)[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" 
+  [1m[36mType Load (0.3ms)[0m  [1mSELECT "types".* FROM "types" [0m
+Rendered entries/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 130ms (Views: 15.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:15 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+  Processing by TypesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mType Load (0.3ms)[0m  [1mSELECT "types".* FROM "types" WHERE (user_id = 1)[0m
+Rendered types/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 81ms (Views: 49.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:16 +0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:17 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:33:21 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 62ms (Views: 26.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:22 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+  Processing by TypesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mType Load (0.3ms)[0m  [1mSELECT "types".* FROM "types" WHERE (user_id = 1)[0m
+Rendered types/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 93ms (Views: 27.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:24 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE (user_id = 1)[0m
+Rendered categories/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 121ms (Views: 56.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:25 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2012-04-27 00:33:26 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 120ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:33:27 +0200
+  Processing by EntriesController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 53ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-04-27 00:33:27 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:27 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:28 +0200
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2012-04-27 00:33:36 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wjokMYLc7iaQY/F6wwCWLf3/XrK5cqamcLQDkonOJcY=", "email"=>"michelle@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 30ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+  Processing by EntriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE (user_id = 2)
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mType Load (0.3ms)[0m  SELECT "types".* FROM "types" 
+Rendered entries/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 83ms (Views: 14.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:37 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/types" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+  Processing by TypesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mType Load (0.2ms)[0m  SELECT "types".* FROM "types" WHERE (user_id = 2)
+Rendered types/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 136ms (Views: 34.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:39 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+  Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE (user_id = 2)
+Rendered categories/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 112ms (Views: 57.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /expenses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/types.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/expenses.js?body=1" for 127.0.0.1 at 2012-04-27 00:33:40 +0200
+Served asset /expenses.js - 304 Not Modified (0ms)
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (111.6ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("categories")[0m
+  [1m[35m (91.0ms)[0m  CREATE INDEX "index_categories_on_user_id" ON "categories" ("user_id")
+  [1m[36m (128.9ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (91.3ms)[0m  [1mCREATE INDEX "index_entries_on_category_id" ON "entries" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("entries")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (135.7ms)[0m  CREATE INDEX "index_entries_on_type_id" ON "entries" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_entries_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_entries_on_category_id')[0m
+  [1m[35m (213.0ms)[0m  CREATE INDEX "index_entries_on_user_id" ON "entries" ("user_id")
+  [1m[36m (112.4ms)[0m  [1mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "concept" varchar(255), "amount" float, "category_id" integer, "user_id" integer, "type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (91.4ms)[0m  [1mCREATE INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("expenses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (225.6ms)[0m  CREATE INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("expenses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_expenses_on_type_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_expenses_on_category_id')[0m
+  [1m[35m (91.4ms)[0m  CREATE INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")
+  [1m[36m (135.0ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (247.1ms)[0m  [1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (81.0ms)[0m  CREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")
+  [1m[36m (120.1ms)[0m  [1mCREATE TABLE "types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("types")
+  [1m[36m (93.6ms)[0m  [1mCREATE INDEX "index_types_on_user_id" ON "types" ("user_id")[0m
+  [1m[35m (128.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "hashed_password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (91.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (280.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (91.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120426202720')[0m
+  [1m[35m (80.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412163550')
+  [1m[36m (102.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212233734')[0m
+  [1m[35m (179.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120213001458')
+  [1m[36m (80.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120212230924')[0m
+  [1m[35m (80.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120412154118')
+  [1m[36m (80.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120417171534')[0m
+  [1m[35m (146.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120212235410')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (9.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:36:29 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Home"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Work"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Leisure"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Weekly"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Monthly"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Yearly"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "types" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["name", "Once"], ["updated_at", Thu, 26 Apr 2012 22:36:30 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'jhon@example.com' LIMIT 1
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 26 Apr 2012 22:36:31 UTC +00:00], ["email", "jhon@example.com"], ["hashed_password", "dd5fef9c1c1da1394d6d34b248c51be2ad740840"], ["updated_at", Thu, 26 Apr 2012 22:36:31 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  UPDATE "categories" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.102150' WHERE "categories"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "categories" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.103591' WHERE "categories"."id" = 2[0m
+  [1m[35m (0.1ms)[0m  UPDATE "categories" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.104426' WHERE "categories"."id" = 3
+  [1m[36m (0.1ms)[0m  [1mUPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.105280' WHERE "types"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.106113' WHERE "types"."id" = 2
+  [1m[36m (0.1ms)[0m  [1mUPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.106915' WHERE "types"."id" = 3[0m
+  [1m[35m (0.2ms)[0m  UPDATE "types" SET "user_id" = 1, "updated_at" = '2012-04-26 22:36:31.107681' WHERE "types"."id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'michelle@example.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `hashed_password`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 26 Apr 2012 22:36:31 UTC +00:00], ["email", "michelle@example.com"], ["hashed_password", "f83a161e0038478b20d8dd0195e34cee3461dbc7"], ["updated_at", Thu, 26 Apr 2012 22:36:31 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mUPDATE "categories" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.198126' WHERE "categories"."id" = 4[0m
+  [1m[35m (0.1ms)[0m  UPDATE "categories" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.199219' WHERE "categories"."id" = 5
+  [1m[36m (0.1ms)[0m  [1mUPDATE "categories" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.200089' WHERE "categories"."id" = 6[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.200966' WHERE "types"."id" = 5
+  [1m[36m (0.1ms)[0m  [1mUPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.201843' WHERE "types"."id" = 6[0m
+  [1m[35m (0.1ms)[0m  UPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.202623' WHERE "types"."id" = 7
+  [1m[36m (0.1ms)[0m  [1mUPDATE "types" SET "user_id" = 2, "updated_at" = '2012-04-26 22:36:31.203388' WHERE "types"."id" = 8[0m
