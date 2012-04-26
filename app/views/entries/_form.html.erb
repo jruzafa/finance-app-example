@@ -36,8 +36,8 @@
     <%= f.label :type_id %><br />
     
     <%= select("entry","type_id", @types.collect {|p| [ p.name, p.id ]},{:include_blank => 'Frequency'}) %>
-
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

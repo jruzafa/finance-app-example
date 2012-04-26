@@ -1,5 +1,7 @@
 Expenses::Application.routes.draw do
   
+  resources :expenses
+
   root :to => 'entries#index'
   
   resources :types
