@@ -3,9 +3,9 @@ class CreateEntries < ActiveRecord::Migration
     create_table :entries do |t|
       t.string :concept
       t.float :amount
-      t.integer :category_id
-      t.integer :user_id
-      t.integer :type_id
+      t.references :category
+      t.references :user
+      t.references :type
 
       t.timestamps
     end

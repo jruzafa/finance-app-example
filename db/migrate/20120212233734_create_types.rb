@@ -2,7 +2,7 @@ class CreateTypes < ActiveRecord::Migration
   def change
     create_table :types do |t|
       t.string :name
-      t.integer :user_id
+      t.references :user
 
       t.timestamps
     end

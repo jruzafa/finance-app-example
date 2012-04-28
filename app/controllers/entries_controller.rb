@@ -12,7 +12,6 @@ class EntriesController < ApplicationController
       @entries = Entry.all
     end
     
-
     # added
     @categories = Category.all
     @types = Type.all
@@ -21,6 +20,7 @@ class EntriesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @entries }
     end
+
   end
 
   # GET /entries/1
