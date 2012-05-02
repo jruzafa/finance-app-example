@@ -21,21 +21,15 @@
     <%= f.label :amount %><br />
     <%= f.text_field :amount %>
   </div>
-
-  <div class="field">
-    <%#= f.label :user_id %><br />
-    <%#= f.number_field (@user.id) %>
-  </div>
-  
+ 
 	<div class="field">
-		<%= f.label :category_id %><br />
-		<%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]},{:include_blank => 'Category'}) %>
+		<%= f.label :category %>
+		<%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]}) %>
 	</div>
 
   <div class="field">
-    <%= f.label :type_id %><br />
-    
-    <%= select("entry","type_id", @types.collect {|p| [ p.name, p.id ]},{:include_blank => 'Frequency'}) %>
+    <%= f.label :type %>    
+    <%= select("entry","type_id", @types.collect {|p| [ p.name, p.id ]}) %>
   </div>
   
   <div class="actions">

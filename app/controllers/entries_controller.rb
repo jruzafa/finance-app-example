@@ -80,7 +80,7 @@ class EntriesController < ApplicationController
   def create
     # assings a user_id with logged id user
     params[:entry][:user_id] = current_user.id
-
+    
     @entry = Entry.new(params[:entry])
 
     respond_to do |format|
