@@ -2,7 +2,7 @@ Expenses::Application.routes.draw do
   
   resources :expenses
 
-  root :to => 'entries#index'
+  root :to => 'reports#index'
   
   resources :types
 
@@ -11,6 +11,8 @@ Expenses::Application.routes.draw do
   resources :categories
 
   resources :users
+
+  resources :reports
   
   resource :session
   

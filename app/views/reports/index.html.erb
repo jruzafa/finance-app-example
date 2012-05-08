@@ -1,0 +1,60 @@
+hola template reports!!
+
+<h1>Expenses</h1>
+
+<table>
+  <tr>
+    <th>Concept</th>
+    <th>Amount</th>
+    <th>Category</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expenses.each do |expense| %>
+  <tr>
+    <td><%= expense.concept %></td>
+    <td><%= expense.amount %></td>
+    <td><%= Category.find(expense.category_id).name %></td>
+    <td><%= Type.find(expense.type_id).name %></td>
+    <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+    <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<h1>Entries</h1>
+
+<table>
+  <tr>
+    <th>Concept</th>
+    <th>Amount</th>
+    <th>Category</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.concept %></td>
+    <td><%= entry.amount %></td>
+    <td><%= Category.find(entry.category_id).name %></td>
+    <td><%= Type.find(entry.type_id).name %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+  <tr>
+    <td>Total:</td>
+    <td><%= @total_entries %></td>
+  </tr>
+</table>
+<%= debug @total_entries %>
+
+<h1>Summary</h1>

@@ -5,13 +5,9 @@ class EntriesController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    
-    if !current_user.blank?
-      @entries = Entry.where("user_id = #{current_user.id}").all  
-    else
-      @entries = Entry.all
-    end
-    
+        
+    @entries = Entry.where("user_id = #{current_user.id}").all  
+
     # added
     @categories = Category.all
     @types = Type.all
