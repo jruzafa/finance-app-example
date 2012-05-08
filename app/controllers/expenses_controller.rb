@@ -6,14 +6,12 @@ class ExpensesController < ApplicationController
   # GET /expenses.json
   def index
     
-
     if !current_user.blank?
       @expenses = Expense.where("user_id = #{current_user.id}").all  
     else
       @expenses = Expense.all
     end
     
-
     # added
     @categories = Category.all
     @types = Type.all
@@ -28,6 +26,11 @@ class ExpensesController < ApplicationController
   # GET /expenses/1.json
   def show
     @expense = Expense.find(params[:id])
+    
+    # adding additionals fields 
+    @category_name = Category.find(@expense.category_id).name
+    @type_name = Type.find(@expense.type_id).name
+    @user_name = User.find(@expense.user_id).email
 
     respond_to do |format|
       format.html # show.html.erb
@@ -51,7 +54,9 @@ class ExpensesController < ApplicationController
 
   # GET /expenses/1/edit
   def edit
-    @expense = Expense.find(params[:id])
+    @expense = Expense.where("user_id = #{current_user.id}").find(params[:id])
+    @categories = Category.where("user_id = #{current_user.id}").all
+    @types = Type.where("user_id = #{current_user.id}").all
   end
 
   # POST /expenses

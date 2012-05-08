@@ -11,20 +11,19 @@
 </p>
 
 <p>
-  <b>Category:</b>
-  <%= @expense.category %>
+  <b>User:</b>
+  <%= @user_name %>
 </p>
 
 <p>
-  <b>User:</b>
-  <%= @expense.user %>
+  <b>Category:</b>
+  <%= @category_name %>
 </p>
 
 <p>
   <b>Type:</b>
-  <%= @expense.type %>
+  <%= @type_name %>
 </p>
-
 
 <%= link_to 'Edit', edit_expense_path(@expense) %> |
 <%= link_to 'Back', expenses_path %>
