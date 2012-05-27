@@ -18,8 +18,9 @@ ROADMAP
 
 v 1.0.0
 
-- CRUD para ingresos, gastos, categorias.
+- CRUD para ingresos, gastos, categorias y frecuencia.
 - Informes.
+- Registros de usuarios.
 
 
 v 1.1.0
