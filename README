@@ -2,8 +2,42 @@
 
 The expenses project is a web app for learn Ruby on Rails and git, and manage your expenses personal.
 
+Thanks for bitbucket!!
+
+TECHNOGY
 
 Ruby On Rails
 Git
+Ruby
+Bootstrap
+Html5 
+Jquery
 
-Thanks for bitbucket!!
+
+ROADMAP
+
+v 1.0.0
+
+- CRUD para ingresos, gastos, categorias.
+- Informes.
+
+
+v 1.1.0
+
+- Idiomas español.
+- Tipos de moneda.
+- Avisos por email.
+- Crear ingreso o gasto trimestral, anual, etc.. y poder dividirlo en meses.
+- Exportar a csv o cualquier otro formato.
+- Conexion mediante mobile.
+
+v 2.0.0
+
+- Espacios de trabajo
+- Un Espacio de trabajo para varios usuarios.
+- Gastos e ingresos de varios usuarios en un espacio de trabajo.
+
+
+CONTACT
+
+jose.ruzafa@gmail.com
