@@ -4,7 +4,6 @@ class ReportsController < ApplicationController
 
 	def index
 
-	
 		# call month entries
 		@entries = Report.month_entries(current_user.id)
 
@@ -20,7 +19,9 @@ class ReportsController < ApplicationController
 
 		respond_to do |format|
 			format.html # index.html.erb
+			format.json 
 		end
 
 	end
+	
 end

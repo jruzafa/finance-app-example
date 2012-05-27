@@ -64,3 +64,14 @@ hola template reports!!
 </table>
 
 <h1>Summary</h1>
+<table>
+	<th>
+		<% if @total_expenses >=  @total_entries %>
+			<td>No benefit</td>
+			<% else if @total_entries > @total_expenses %>
+				<td><span>Total of benefits:</span></td>
+				<td><%= @total_entries - @total_expenses %></td>	
+			<% end %>
+		<% end %>
+	</th>
+</table>
