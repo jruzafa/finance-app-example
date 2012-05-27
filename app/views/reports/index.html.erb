@@ -25,6 +25,10 @@ hola template reports!!
     <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
+ <tr>
+    <td>Total:</td>
+    <td><%= @total_expenses %></td>
+  </tr>
 </table>
 
 <br />
@@ -58,6 +62,5 @@ hola template reports!!
     <td><%= @total_entries %></td>
   </tr>
 </table>
-<%= debug @total_entries %>
 
 <h1>Summary</h1>

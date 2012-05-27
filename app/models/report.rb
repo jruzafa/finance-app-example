@@ -1,10 +1,9 @@
 class Report < ActiveRecord::Base
 	
-		def self.current_month
-			return Date.new(Time.now.year, Time.now.month).to_time
-		end
-	
-
+	# return the current month now
+	def self.current_month
+		return Date.new(Time.now.year, Time.now.month).to_time
+	end
 
 	# return entries for current month
 	def self.month_entries(user)
@@ -16,7 +15,7 @@ class Report < ActiveRecord::Base
 		#return Entry.all
 	end
 
-	# return entries for current month
+	# return expensesn for current month
 	def self.month_expenses(user)
 
 		time = current_month
@@ -26,9 +25,16 @@ class Report < ActiveRecord::Base
 		#return Entry.all
 	end
 
+  # return the total of amount field the entries for current month
 	def self.total_entries(user)
 		time = current_month
-		return Expense.select('SUM(amount)').where(:created_at => time.beginning_of_month..time.end_of_month, :user_id => user)
+		return Entry.where(:created_at => time.beginning_of_month..time.end_of_month, :user_id => user).sum('amount');
 	end
+	
+	# return the total of amount field the expenses for current month
+  def self.total_expenses(user)
+    time = current_month
+    return Expense.where(:created_at => time.beginning_of_month..time.end_of_month, :user_id => user).sum('amount');
+  end
 
 end

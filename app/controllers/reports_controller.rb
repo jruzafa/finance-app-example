@@ -13,6 +13,9 @@ class ReportsController < ApplicationController
 
 		# totals
 		@total_entries = Report.total_entries(current_user.id)
+		
+		# totals
+    @total_expenses = Report.total_expenses(current_user.id)
 
 
 		respond_to do |format|
