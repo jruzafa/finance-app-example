@@ -19,16 +19,16 @@
     <%= f.label :amount %><br />
     <%= f.text_field :amount %>
   </div>
-  
+
   <div class="field">
     <%= f.label :category_id %><br />
-    <%= select("expense","category_id", @categories.collect {|p| [ p.name, p.id ]},{:include_blank => 'Category'}) %>
+    <%= select("expense","category_id", @categories.collect {|p| [ p.name, p.id ]}) %>
   </div>
 
   <div class="field">
     <%= f.label :type_id %><br />
-    
-    <%= select("expense","type_id", @types.collect {|p| [ p.name, p.id ]},{:include_blank => 'Frequency'}) %>
+
+    <%= select("expense","type_id", @types.collect {|p| [ p.name, p.id ]}) %>
   </div>
 
   <div class="actions">
