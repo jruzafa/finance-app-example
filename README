@@ -6,22 +6,23 @@ Thanks for bitbucket!!
 
 TECHNOGY
 
-Ruby On Rails
+Rails
 Git
 Ruby
 Bootstrap
-Html5 
-Jquery
-
+Html5
+Jquery - Solo JS ¿?
 
 ROADMAP
 
 v 1.0.0
 
-- CRUD para ingresos, gastos, categorias y frecuencia.
+- CRUD para ingresos, gastos, categorias y tipos.
 - Informes.
 - Registros de usuarios.
-
+- Validadores.
+- BD Mysql.
+- Frontend.
 
 v 1.1.0
 
