@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120426202720) do
+ActiveRecord::Schema.define(:version => 20120508151850) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -27,13 +27,11 @@ ActiveRecord::Schema.define(:version => 20120426202720) do
     t.float    "amount"
     t.integer  "category_id"
     t.integer  "user_id"
-    t.integer  "type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "entries", ["category_id"], :name => "index_entries_on_category_id"
-  # add_index "entries", ["type_id"], :name => "index_entries_on_type_id"
   add_index "entries", ["user_id"], :name => "index_entries_on_user_id"
 
   create_table "expenses", :force => true do |t|
@@ -41,14 +39,17 @@ ActiveRecord::Schema.define(:version => 20120426202720) do
     t.float    "amount"
     t.integer  "category_id"
     t.integer  "user_id"
-    t.integer  "type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "expenses", ["category_id"], :name => "index_expenses_on_category_id"
-  # add_index "expenses", ["type_id"], :name => "index_expenses_on_type_id"
   add_index "expenses", ["user_id"], :name => "index_expenses_on_user_id"
+
+  create_table "reports", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -59,15 +60,6 @@ ActiveRecord::Schema.define(:version => 20120426202720) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
-
-  # create_table "types", :force => true do |t|
-  #   t.string   "name"
-  #   t.integer  "user_id"
-  #   t.datetime "created_at"
-  #   t.datetime "updated_at"
-  # end
-
-  # add_index "types", ["user_id"], :name => "index_types_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email"
