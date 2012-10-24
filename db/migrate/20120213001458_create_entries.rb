@@ -5,12 +5,12 @@ class CreateEntries < ActiveRecord::Migration
       t.float :amount
       t.references :category
       t.references :user
-      t.references :type
+      # t.references :type
 
       t.timestamps
     end
     add_index :entries, :category_id
     add_index :entries, :user_id
-    add_index :entries, :type_id
+    # add_index :entries, :type_id
   end
 end

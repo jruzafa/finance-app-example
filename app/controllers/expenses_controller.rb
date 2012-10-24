@@ -1,20 +1,20 @@
 class ExpensesController < ApplicationController
 
   before_filter :authenticate
-  
+
   # GET /expenses
   # GET /expenses.json
   def index
-    
+
     if !current_user.blank?
-      @expenses = Expense.where("user_id = #{current_user.id}").all  
+      @expenses = Expense.where("user_id = #{current_user.id}").all
     else
       @expenses = Expense.all
     end
-    
+
     # added
     @categories = Category.all
-    @types = Type.all
+    # @types = Type.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,10 +26,10 @@ class ExpensesController < ApplicationController
   # GET /expenses/1.json
   def show
     @expense = Expense.find(params[:id])
-    
-    # adding additionals fields 
+
+    # adding additionals fields
     @category_name = Category.find(@expense.category_id).name
-    @type_name = Type.find(@expense.type_id).name
+    # @type_name = Type.find(@expense.type_id).name
     @user_name = User.find(@expense.user_id).email
 
     respond_to do |format|
@@ -44,7 +44,7 @@ class ExpensesController < ApplicationController
     @expense = Expense.new
 
     @categories = Category.where("user_id = #{current_user.id}").all
-    @types = Type.where("user_id = #{current_user.id}").all
+    # @types = Type.where("user_id = #{current_user.id}").all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -56,13 +56,13 @@ class ExpensesController < ApplicationController
   def edit
     @expense = Expense.where("user_id = #{current_user.id}").find(params[:id])
     @categories = Category.where("user_id = #{current_user.id}").all
-    @types = Type.where("user_id = #{current_user.id}").all
+    # @types = Type.where("user_id = #{current_user.id}").all
   end
 
   # POST /expenses
   # POST /expenses.json
   def create
-    
+
     params[:expense][:user_id] = current_user.id
 
     @expense = Expense.new(params[:expense])

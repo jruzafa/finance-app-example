@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-  
+
   before_filter :authenticate
 
 	def index
@@ -12,16 +12,16 @@ class ReportsController < ApplicationController
 
 		# totals
 		@total_entries = Report.total_entries(current_user.id)
-		
+
 		# totals
-    @total_expenses = Report.total_expenses(current_user.id)
+    	@total_expenses = Report.total_expenses(current_user.id)
 
 
 		respond_to do |format|
 			format.html # index.html.erb
-			format.json 
+			format.json
 		end
 
 	end
-	
+
 end

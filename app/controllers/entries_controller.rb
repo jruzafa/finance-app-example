@@ -1,17 +1,17 @@
 class EntriesController < ApplicationController
-  
+
   before_filter :authenticate
 
   # GET /entries
   # GET /entries.json
   def index
-        
-    @entries = Entry.where("user_id = #{current_user.id}").all  
+
+    @entries = Entry.where("user_id = #{current_user.id}").all
 
     # added
     @categories = Category.all
-    @types = Type.all
-    
+    # @types = Type.all
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @entries }
@@ -23,12 +23,12 @@ class EntriesController < ApplicationController
   # GET /entries/1.json
   def show
     @entry = Entry.find(params[:id])
-    
-    # adding additionals fields 
+
+    # adding additionals fields
     @category_name = Category.find(@entry.category_id).name
-    @type_name = Type.find(@entry.type_id).name
+    # @type_name = Type.find(@entry.type_id).name
     @user_name = User.find(@entry.user_id).email
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @entry }
@@ -39,10 +39,10 @@ class EntriesController < ApplicationController
   # GET /entries/new.json
   def new
     @entry = Entry.new
-   
+
     @categories = Category.where("user_id = #{current_user.id}").all
-    @types = Type.where("user_id = #{current_user.id}").all
-    
+    # @types = Type.where("user_id = #{current_user.id}").all
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @entry }
@@ -53,7 +53,7 @@ class EntriesController < ApplicationController
   def edit
     @entry = Entry.where("user_id = #{current_user.id}").find(params[:id])
     @categories = Category.where("user_id = #{current_user.id}").all
-    @types = Type.where("user_id = #{current_user.id}").all
+    # @types = Type.where("user_id = #{current_user.id}").all
   end
 
   # POST /entries
@@ -61,7 +61,7 @@ class EntriesController < ApplicationController
   def create
     # assings a user_id with logged id user
     params[:entry][:user_id] = current_user.id
-    
+
     @entry = Entry.new(params[:entry])
 
     respond_to do |format|

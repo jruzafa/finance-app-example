@@ -25,12 +25,6 @@
     <%= select("expense","category_id", @categories.collect {|p| [ p.name, p.id ]}) %>
   </div>
 
-  <div class="field">
-    <%= f.label :type_id %><br />
-
-    <%= select("expense","type_id", @types.collect {|p| [ p.name, p.id ]}) %>
-  </div>
-
   <div class="actions">
     <%= f.submit %>
   </div>

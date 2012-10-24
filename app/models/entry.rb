@@ -4,5 +4,5 @@ class Entry < ActiveRecord::Base
   # validates :type, :presence => true
   belongs_to :category
   belongs_to :user
-  belongs_to :type
+  # belongs_to :type
 end

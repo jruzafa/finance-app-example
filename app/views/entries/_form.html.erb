@@ -16,22 +16,17 @@
     <%= f.label :concept %><br />
     <%= f.text_field :concept %>
   </div>
-  
+
   <div class="field">
     <%= f.label :amount %><br />
     <%= f.text_field :amount %>
   </div>
- 
+
 	<div class="field">
 		<%= f.label :category %>
 		<%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]}) %>
 	</div>
 
-  <div class="field">
-    <%= f.label :type %>    
-    <%= select("entry","type_id", @types.collect {|p| [ p.name, p.id ]}) %>
-  </div>
-  
   <div class="actions">
     <%= f.submit %>
   </div>

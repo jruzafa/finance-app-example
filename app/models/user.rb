@@ -16,17 +16,17 @@ class User < ActiveRecord::Base
   has_many :categories
   has_many :entries
   has_many :expenses
-  has_many :types
-  
+  # has_many :types
+
   # before save user encrypt password in SHA1
   before_save :encrypt_new_password
-  
+
   def self.authenticate(email, password)
     user = find_by_email(email)
     return user if user && user.authenticated?(password)
   end
-  
-  
+
+
   def authenticated?(password)
     self.hashed_password == encrypt(password)
   end
@@ -38,13 +38,13 @@ class User < ActiveRecord::Base
       return if password.blank?
 
       # if password is set encrypted and keep in hashed_password
-      self.hashed_password = encrypt(password)    
+      self.hashed_password = encrypt(password)
     end
-    
+
     def password_required?
       hashed_password.blank? || password.present?
     end
-    
+
     def encrypt(string)
       Digest::SHA1.hexdigest(string)
     end

@@ -1,10 +1,10 @@
 Expenses::Application.routes.draw do
-  
+
   resources :expenses
 
   root :to => 'reports#index'
-  
-  resources :types
+
+  # resources :types
 
   resources :entries
 
@@ -13,9 +13,9 @@ Expenses::Application.routes.draw do
   resources :users
 
   resources :reports
-  
+
   resource :session
-  
+
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
   match '/register' => "users#new", :as => "register"
