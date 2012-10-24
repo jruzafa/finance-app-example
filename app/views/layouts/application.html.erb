@@ -8,9 +8,10 @@
 </head>
 <body>
 <div id="user_bar">
-
 	<% if logged_in? %>
+		<%= link_to t('home'), root_path %> |
 		<%= link_to t('category'), categories_path %> |
+		<%= link_to t('entries'), entries_path %> |
 		<%= link_to t('entries.new_entry'), new_entry_path %> |
 		<%= link_to t('expense'), expenses_path %> |
 		<%= link_to t('expenses.new_expense'), new_expense_path %> |
