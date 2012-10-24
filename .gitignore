@@ -1,10 +1,8 @@
 # Can ignore specific files
 .DS_Store
-
 # Use wildcards as well
 *~
 *.swp
-tmp/
 *.rbc
 *.sassc
 .sass-cache
