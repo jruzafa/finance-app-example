@@ -5,10 +5,7 @@
     <th>Concept</th>
     <th>Amount</th>
     <th>Category</th>
-    <th>Type</th>
     <th>Date</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -17,10 +14,7 @@
     <td><%= expense.concept %></td>
     <td><%= expense.amount %></td>
     <td><%= Category.find(expense.category_id).name %></td>
-    <td><%= Type.find(expense.type_id).name %></td>
 	<td><%= l expense.created_at, :format => :short %></td>
-    <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
-    <td><%= link_to 'Destroy', expense, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
  <tr>
@@ -41,18 +35,13 @@
     <th>Type</th>
     <th>Date</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 <% @entries.each do |entry| %>
   <tr>
     <td><%= entry.concept %></td>
     <td><%= entry.amount %></td>
     <td><%= Category.find(entry.category_id).name %></td>
-    <td><%= Type.find(entry.type_id).name %></td>
 	<td><%= l entry.created_at, :format => :short %></td>
-    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
   <tr>
@@ -68,7 +57,7 @@
 			<td>No benefit</td>
 			<% else if @total_entries > @total_expenses %>
 				<td><span>Total of benefits:</span></td>
-				<td><%= @total_entries - @total_expenses %></td>	
+				<td><%= @total_entries - @total_expenses %></td>
 			<% end %>
 		<% end %>
 	</th>
