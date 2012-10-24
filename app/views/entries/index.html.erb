@@ -5,8 +5,6 @@
     <th>Concept</th>
     <th>Amount</th>
     <th>Category</th>
-    <th>Type</th>
-    <th></th>
     <th></th>
     <th></th>
   </tr>
@@ -16,8 +14,6 @@
     <td><%= entry.concept %></td>
     <td><%= entry.amount %></td>
     <td><%= Category.find(entry.category_id).name %></td>
-    <td><%= Type.find(entry.type_id).name %></td>
-    <td><%= link_to 'Show', entry %></td>
     <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
     <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
