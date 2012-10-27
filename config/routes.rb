@@ -4,13 +4,11 @@ Expenses::Application.routes.draw do
 
   root :to => 'reports#index'
 
-  # resources :types
+  resources :entries, :except => :show
 
-  resources :entries
+  resources :categories, :except => :show
 
-  resources :categories
-
-  resources :users
+  resources :users, :except => :show
 
   resources :reports
 
