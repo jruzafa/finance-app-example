@@ -6,37 +6,36 @@ class ExpensesController < ApplicationController
   # GET /expenses.json
   def index
 
-    if !current_user.blank?
-      @expenses = Expense.where("user_id = #{current_user.id}").all
-    else
-      @expenses = Expense.all
-    end
+    @expenses = Expense.where("user_id = #{current_user.id}").all
 
     # added
-    @categories = Category.all
+    @categories = Category.where("user_id = #{current_user.id}").all
     # @types = Type.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @expenses }
+    if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
     end
   end
 
   # GET /expenses/1
   # GET /expenses/1.json
-  def show
-    @expense = Expense.find(params[:id])
+  # def show
+  #   @expense = Expense.find(params[:id])
 
-    # adding additionals fields
-    @category_name = Category.find(@expense.category_id).name
-    # @type_name = Type.find(@expense.type_id).name
-    @user_name = User.find(@expense.user_id).email
+  #   # adding additionals fields
+  #   @category_name = Category.find(@expense.category_id).name
+  #   # @type_name = Type.find(@expense.type_id).name
+  #   @user_name = User.find(@expense.user_id).email
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @expense }
-    end
-  end
+  #   respond_to do |format|
+  #     format.html # show.html.erb
+  #     format.json { render json: @expense }
+  #   end
+  # end
 
   # GET /expenses/new
   # GET /expenses/new.json
@@ -46,9 +45,12 @@ class ExpensesController < ApplicationController
     @categories = Category.where("user_id = #{current_user.id}").all
     # @types = Type.where("user_id = #{current_user.id}").all
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @expense }
+     if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
     end
   end
 
@@ -57,6 +59,13 @@ class ExpensesController < ApplicationController
     @expense = Expense.where("user_id = #{current_user.id}").find(params[:id])
     @categories = Category.where("user_id = #{current_user.id}").all
     # @types = Type.where("user_id = #{current_user.id}").all
+    if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
+    end
   end
 
   # POST /expenses

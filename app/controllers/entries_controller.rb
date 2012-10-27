@@ -1,7 +1,6 @@
 class EntriesController < ApplicationController
 
   before_filter :authenticate
-
   # GET /entries
   # GET /entries.json
   def index
@@ -9,31 +8,37 @@ class EntriesController < ApplicationController
     @entries = Entry.where("user_id = #{current_user.id}").all
 
     # added
-    @categories = Category.all
+    @categories = Category.where("user_id = #{current_user.id}").all
     # @types = Type.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @entries }
+   if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
     end
 
   end
 
   # GET /entries/1
   # GET /entries/1.json
-  def show
-    @entry = Entry.find(params[:id])
+  # def show
+  #   @entry = Entry.find(params[:id])
 
-    # adding additionals fields
-    @category_name = Category.find(@entry.category_id).name
-    # @type_name = Type.find(@entry.type_id).name
-    @user_name = User.find(@entry.user_id).email
+  #   # adding additionals fields
+  #   @category_name = Category.find(@entry.category_id).name
+  #   # @type_name = Type.find(@entry.type_id).name
+  #   @user_name = User.find(@entry.user_id).email
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @entry }
-    end
-  end
+  #   if @categories.length != 0
+  #     respond_to do |format|
+  #       format.html # new.html.erb
+  #     end
+  #   else
+  #     redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
+  #   end
+  # end
 
   # GET /entries/new
   # GET /entries/new.json
@@ -43,10 +48,16 @@ class EntriesController < ApplicationController
     @categories = Category.where("user_id = #{current_user.id}").all
     # @types = Type.where("user_id = #{current_user.id}").all
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @entry }
+    # if the user not category redirect to new category
+    if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "Before creating expense you have to create your categories"
     end
+
+
   end
 
   # GET /entries/1/edit
@@ -54,6 +65,13 @@ class EntriesController < ApplicationController
     @entry = Entry.where("user_id = #{current_user.id}").find(params[:id])
     @categories = Category.where("user_id = #{current_user.id}").all
     # @types = Type.where("user_id = #{current_user.id}").all
+   if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
+    end
   end
 
   # POST /entries
