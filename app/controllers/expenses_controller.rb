@@ -21,22 +21,6 @@ class ExpensesController < ApplicationController
     end
   end
 
-  # GET /expenses/1
-  # GET /expenses/1.json
-  # def show
-  #   @expense = Expense.find(params[:id])
-
-  #   # adding additionals fields
-  #   @category_name = Category.find(@expense.category_id).name
-  #   # @type_name = Type.find(@expense.type_id).name
-  #   @user_name = User.find(@expense.user_id).email
-
-  #   respond_to do |format|
-  #     format.html # show.html.erb
-  #     format.json { render json: @expense }
-  #   end
-  # end
-
   # GET /expenses/new
   # GET /expenses/new.json
   def new
