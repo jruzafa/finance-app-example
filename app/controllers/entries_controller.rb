@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
 
   before_filter :authenticate
+
   # GET /entries
   # GET /entries.json
   def index
@@ -21,25 +22,6 @@ class EntriesController < ApplicationController
 
   end
 
-  # GET /entries/1
-  # GET /entries/1.json
-  # def show
-  #   @entry = Entry.find(params[:id])
-
-  #   # adding additionals fields
-  #   @category_name = Category.find(@entry.category_id).name
-  #   # @type_name = Type.find(@entry.type_id).name
-  #   @user_name = User.find(@entry.user_id).email
-
-  #   if @categories.length != 0
-  #     respond_to do |format|
-  #       format.html # new.html.erb
-  #     end
-  #   else
-  #     redirect_to new_category_path, :alert => "Before creating expense or entry you have to create your categories"
-  #   end
-  # end
-
   # GET /entries/new
   # GET /entries/new.json
   def new
@@ -56,8 +38,6 @@ class EntriesController < ApplicationController
     else
       redirect_to new_category_path, :alert => "Before creating expense you have to create your categories"
     end
-
-
   end
 
   # GET /entries/1/edit
@@ -84,11 +64,9 @@ class EntriesController < ApplicationController
 
     respond_to do |format|
       if @entry.save
-        format.html { redirect_to @entry, notice: 'Entry was successfully created.' }
-        format.json { render json: @entry, status: :created, location: @entry }
+        format.html { redirect_to @entries, notice: 'Entry was successfully created.' }
       else
         format.html { render action: "new" }
-        format.json { render json: @entry.errors, status: :unprocessable_entity }
       end
     end
   end
