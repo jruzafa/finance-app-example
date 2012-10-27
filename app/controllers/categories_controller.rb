@@ -5,23 +5,15 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-   
-    @categories = Category.where("user_id = #{current_user.id}").all  
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @categories }
-    end
-  end
+    @categories = Category.where("user_id = #{current_user.id}").all
 
-  # GET /categories/1
-  # GET /categories/1.json
-  def show
-    @category = Category.where("user_id = #{current_user.id}").find(params[:id])
-   
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @category }
+    if @categories.length != 0
+      respond_to do |format|
+        format.html # new.html.erb
+      end
+    else
+      redirect_to new_category_path, :alert => "You have to create your categories"
     end
   end
 
@@ -38,17 +30,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1/edit
   def edit
-    #where("user_id = #{current_user.id}")
-   
-  #  @prueba = Category.category_user(params[:id])
-  #  if Category.category_user(params[:id])
-     # @category = Category.where("user_id = #{current_user.id}").find(params[:id])
-   # else
-    #  redirect_to categories_path
-    #end
-
      @category = Category.where("user_id = #{current_user.id}").find(params[:id])
-
   end
 
   # POST /categories
