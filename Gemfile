@@ -14,6 +14,12 @@ gem 'sqlite3'
   #gem 'coffee-rails', '~> 3.1.1'
   #gem 'uglifier', '>= 1.0.3'
 #end
+#
+
+# add ruby gems for twitter-bootstrap-rails
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
 gem 'jquery-rails'
 
