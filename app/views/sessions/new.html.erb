@@ -1,14 +1,11 @@
-<h1>Login</h1>
-<%= form_tag session_path do %>
-	<div class="field">
-		<%= label_tag :email %><br />
-		<%= text_field_tag :email %>
-	</div>
-	<div class="field">
-		<%= label_tag :password %><br />
-		<%= password_field_tag :password %>
-	</div>
-	<div class="actions">
-		<%= submit_tag 'Login' %>
-	</div>
-<% end %>
+<div class="container">
+	<%= form_tag session_path, :class => 'form-signin' do %>
+		<h2 class="form-signin-heading">Login</h2>
+		<%= text_field_tag :email,nil, :placeholder => 'Email address', :class => 'input-block-level' %>
+		<%= password_field_tag :password, nil, :placeholder => 'Password', :class => 'input-block-level' %>
+		<label class="checkbox">
+		<input type="checkbox" value="remember-me"> Remember me
+		</label>
+		<%= submit_tag 'Sign in', :class => 'btn btn-large btn-primary' %>
+	<% end %>
+</div>
