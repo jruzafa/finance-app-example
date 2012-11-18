@@ -13,9 +13,9 @@ class User < ActiveRecord::Base
             :presence => true,
             :if => :password_required?
 
-  has_many :categories
-  has_many :entries
-  has_many :expenses
+  has_many :categories, :dependent => :destroy
+  has_many :entries, :dependent => :destroy
+  has_many :expenses, :dependent => :destroy
   # has_many :types
 
   # before save user encrypt password in SHA1
