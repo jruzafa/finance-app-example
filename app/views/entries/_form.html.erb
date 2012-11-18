@@ -1,33 +1,38 @@
-
-<%= form_for(@entry) do |f| %>
-  <% if @entry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
-
-      <ul>
-      <% @entry.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @entry, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :concept, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :concept, :class => 'text_field' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :concept %><br />
-    <%= f.text_field :concept %>
+  </div>
+  <div class="control-group">
+    <%= f.label :amount, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :amount, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :category_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :category_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :user_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :user_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :type_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :type_id, :class => 'number_field' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :amount %><br />
-    <%= f.text_field :amount %>
-  </div>
-
-	<div class="field">
-		<%= f.label :category %>
-		<%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]}) %>
-	</div>
-
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                entries_path, :class => 'btn' %>
   </div>
 <% end %>
