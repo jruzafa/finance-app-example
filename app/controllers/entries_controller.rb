@@ -6,10 +6,10 @@ class EntriesController < ApplicationController
   # GET /entries.json
   def index
 
-    @entries = Entry.where("user_id = #{current_user.id}").all
+    @entries = Entry.where("user_id = #{current_user.id}").order('created_at DESC')
 
     # added
-    @categories = Category.where("user_id = #{current_user.id}").all
+    @categories = Category.where("user_id = #{current_user.id}")
     # @types = Type.all
 
    if @categories.length != 0
@@ -27,7 +27,7 @@ class EntriesController < ApplicationController
   def new
     @entry = Entry.new
 
-    @categories = Category.where("user_id = #{current_user.id}").all
+    @categories = Category.where("user_id = #{current_user.id}")
     # @types = Type.where("user_id = #{current_user.id}").all
 
     # if the user not category redirect to new category
@@ -43,7 +43,7 @@ class EntriesController < ApplicationController
   # GET /entries/1/edit
   def edit
     @entry = Entry.where("user_id = #{current_user.id}").find(params[:id])
-    @categories = Category.where("user_id = #{current_user.id}").all
+    @categories = Category.where("user_id = #{current_user.id}")
     # @types = Type.where("user_id = #{current_user.id}").all
    if @categories.length != 0
       respond_to do |format|
