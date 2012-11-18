@@ -64,7 +64,7 @@ class EntriesController < ApplicationController
 
     respond_to do |format|
       if @entry.save
-        format.html { redirect_to @entries, notice: 'Entry was successfully created.' }
+        format.html { redirect_to entries_url, notice: 'Entry was successfully created.' }
       else
         format.html { render action: "new" }
       end
