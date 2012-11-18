@@ -6,10 +6,10 @@ class ExpensesController < ApplicationController
   # GET /expenses.json
   def index
 
-    @expenses = Expense.where("user_id = #{current_user.id}").all
+    @expenses = Expense.where("user_id = #{current_user.id}").order('created_at DESC')
 
     # added
-    @categories = Category.where("user_id = #{current_user.id}").all
+    @categories = Category.where("user_id = #{current_user.id}")
     # @types = Type.all
 
     if @categories.length != 0
@@ -26,7 +26,7 @@ class ExpensesController < ApplicationController
   def new
     @expense = Expense.new
 
-    @categories = Category.where("user_id = #{current_user.id}").all
+    @categories = Category.where("user_id = #{current_user.id}")
     # @types = Type.where("user_id = #{current_user.id}").all
 
      if @categories.length != 0
@@ -76,10 +76,8 @@ class ExpensesController < ApplicationController
     respond_to do |format|
       if @expense.update_attributes(params[:expense])
         format.html { redirect_to @expense, notice: 'Expense was successfully updated.' }
-        format.json { head :ok }
       else
         format.html { render action: "edit" }
-        format.json { render json: @expense.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -92,7 +90,6 @@ class ExpensesController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to expenses_url }
-      format.json { head :ok }
     end
   end
 end
