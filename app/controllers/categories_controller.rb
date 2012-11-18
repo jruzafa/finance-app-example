@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
 
-    @categories = Category.where("user_id = #{current_user.id}").all
+    @categories = Category.where("user_id = #{current_user.id}")
 
     if @categories.length != 0
       respond_to do |format|
