@@ -5,26 +5,20 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:concept) %></th>
       <th><%= model_class.human_attribute_name(:amount) %></th>
-      <th><%= model_class.human_attribute_name(:category_id) %></th>
-      <th><%= model_class.human_attribute_name(:user_id) %></th>
-      <th><%= model_class.human_attribute_name(:type_id) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th>Category</th>
+      <th>Date</th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @entries.each do |entry| %>
       <tr>
-        <td><%= link_to entry.id, entry_path(entry) %></td>
         <td><%= entry.concept %></td>
         <td><%= entry.amount %></td>
-        <td><%= entry.category_id %></td>
-        <td><%= entry.user_id %></td>
-        <td><%= entry.type_id %></td>
-        <td><%=l entry.created_at %></td>
+        <td><%= Category.find(entry.category_id).name %></td>
+        <td><%=l entry.created_at, :format => :short %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_entry_path(entry), :class => 'btn btn-mini' %>

@@ -1,4 +1,15 @@
 <%= form_for @entry, :html => { :class => 'form-horizontal' } do |f| %>
+ <% if @entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+      <ul>
+      <% @entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="control-group">
     <%= f.label :concept, :class => 'control-label' %>
     <div class="controls">
@@ -14,19 +25,7 @@
   <div class="control-group">
     <%= f.label :category_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :category_id, :class => 'number_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :user_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :user_id, :class => 'number_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :type_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :type_id, :class => 'number_field' %>
+     <%= select("entry","category_id", @categories.collect {|p| [ p.name, p.id ]}) %>
     </div>
   </div>
 
