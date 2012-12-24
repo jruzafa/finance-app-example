@@ -1,6 +1,6 @@
 <%- model_class = Expense -%>
 <div class="page-header">
-  <h1><%=t('Expenses', :class => '.title') %></h1>
+  <h1><%=t('Expenses', :class => '.title') %> </h1><%= link_to t('current month'), '/reports/current_month' %>
 </div>
 <table class="table table-striped">
   <thead>
@@ -21,13 +21,11 @@
     </tr>
     <% end %>
     <tr>
-      <td>Total:</td>
-      <td><%= @total_expenses %></td>
+      <td class="total_label">Total:</td>
+      <td class="total_label"><%= @total_expenses %></td>
     </tr>
   </tbody>
 </table>
-
-
 <%- model_class = Entry -%>
 <div class="page-header">
   <h1><%=t('Entries', :class => '.title') %></h1>
@@ -51,24 +49,19 @@
     </tr>
     <% end %>
     <tr>
-      <td>Total:</td>
-      <td><%= @total_entries %></td>
+      <td class="total_label">Total:</td>
+      <td class="total_label"><%= @total_entries %></td>
     </tr>
   </tbody>
 </table>
-
-
-
-
-
 <h1>Summary</h1>
 <table>
 	<th>
 		<% if @total_expenses >=  @total_entries %>
-			<td>No benefit</td>
+			   <td>No benefit</td>
 			<% else if @total_entries > @total_expenses %>
-				<td><span>Total of benefits:</span></td>
-				<td><%= @total_entries - @total_expenses %></td>
+  				<td class="total_label"><span>Total of benefits:</span></td>
+  				<td><%= @total_entries - @total_expenses %></td>
 			<% end %>
 		<% end %>
 	</th>
