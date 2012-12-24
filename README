@@ -1,14 +1,11 @@
-== Welcome to Expenses
+The expenses project is a web app for learn Ruby on Rails.
 
-The expenses project is a web app for learn Ruby on Rails and git, and manage your expenses personal.
+TECHNOLOGY
 
-Thanks for bitbucket!!
-
-TECHNOGY
-
-Rails
-Git
 Ruby
+Rails
+Sqlite
+Git
 Bootstrap
 Html5
 Jquery
