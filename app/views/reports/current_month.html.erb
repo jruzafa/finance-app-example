@@ -1,0 +1,68 @@
+<%- model_class = Expense -%>
+<div class="page-header">
+  <h1><%=t('Expenses', :class => '.title') %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:concept) %></th>
+      <th><%= model_class.human_attribute_name(:amount) %></th>
+      <th><%= model_class.human_attribute_name(:category_id) %></th>
+      <th><%= model_class.human_attribute_name(:date) %></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @expenses.each do |expense| %>
+    <tr>
+      <td><%= expense.concept %></td>
+      <td><%= expense.amount %></td>
+      <td><%= Category.find(expense.category_id).name %></td>
+      <td><%= l expense.created_at, :format => :short %></td>
+    </tr>
+    <% end %>
+    <tr>
+      <td class="total_label">Total:</td>
+      <td class="total_label"><%= @total_expenses %></td>
+    </tr>
+  </tbody>
+</table>
+<%- model_class = Entry -%>
+<div class="page-header">
+  <h1><%=t('Entries', :class => '.title') %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:concept) %></th>
+      <th><%= model_class.human_attribute_name(:amount) %></th>
+      <th><%= model_class.human_attribute_name(:category_id) %></th>
+      <th><%= model_class.human_attribute_name(:date) %></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @entries.each do |entry| %>
+    <tr>
+      <td><%= entry.concept %></td>
+      <td><%= entry.amount %></td>
+      <td><%= Category.find(entry.category_id).name %></td>
+      <td><%= l entry.created_at, :format => :short %></td>
+    </tr>
+    <% end %>
+    <tr>
+      <td class="total_label">Total:</td>
+      <td class="total_label"><%= @total_entries %></td>
+    </tr>
+  </tbody>
+</table>
+<h1>Summary</h1>
+<table>
+	<th>
+		<% if @total_expenses >=  @total_entries %>
+			<td class="total_label">No benefit</td>
+			<% else if @total_entries > @total_expenses %>
+				<td class="total_label"><span>Total of benefits:</span></td>
+				<td class="total_label"><%= @total_entries - @total_expenses %></td>
+			<% end %>
+		<% end %>
+	</th>
+</table>
