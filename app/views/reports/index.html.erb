@@ -58,10 +58,10 @@
 <table>
 	<th>
 		<% if @total_expenses >=  @total_entries %>
-			   <td>No benefit</td>
+			   <td class="total_label">No benefit</td>
 			<% else if @total_entries > @total_expenses %>
   				<td class="total_label"><span>Total of benefits:</span></td>
-  				<td><%= @total_entries - @total_expenses %></td>
+  				<td class="total_label"><%= @total_entries - @total_expenses %></td>
 			<% end %>
 		<% end %>
 	</th>
