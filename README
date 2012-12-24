@@ -11,35 +11,47 @@ Git
 Ruby
 Bootstrap
 Html5
-Jquery - Solo JS ¿?
+Jquery
 
 ROADMAP
 
 v 1.0.0
 
-- CRUD para ingresos, gastos, categorias y tipos.
-- Informes.
-- Registros de usuarios.
-- Validadores.
-- BD Mysql.
+- CRUD for revenues, expenses and categories.
+- Reports.
+- Records users.
+- Validators.
+- BD Sqlite.
 - Frontend.
 
 v 1.1.0
 
-- Idiomas español.
-- Tipos de moneda.
-- Avisos por email.
-- Crear ingreso o gasto trimestral, anual, etc.. y poder dividirlo en meses.
-- Exportar a csv o cualquier otro formato.
-- Conexion mediante mobile.
+- Spanish Language.
+- BD Mysql.
+- Types of currency.
+- Notices by email.
+- Create income or expense quarterly, yearly, etc. .. and to divide it into months.
+- Export to csv or any other format.
+- Connecting via mobile.
 
 v 2.0.0
 
-- Espacios de trabajo
-- Un Espacio de trabajo para varios usuarios.
-- Gastos e ingresos de varios usuarios en un espacio de trabajo.
+- Workspaces
+- A work space for multiple users.
+- Expenses and income from multiple users in a workspace.
 
+QUICK START
+
+In the root folder of project:
+
+1. Fist drop all databases, $ rake db:drop:all
+2. Create db new, $ rake db:create:all
+3. Run migrations, $ rake db:migrate
+4. Load data example, $ rake db:seed
+5. Execute the server, $ rails server
+6. Go in the browser to http://0.0.0.0:3000
 
 CONTACT
 
 jose.ruzafa@gmail.com
+http://www.devopensource.com
