@@ -1,5 +1,9 @@
 Expenses::Application.routes.draw do
 
+  get "reports/index"
+
+  get "reports/current_month"
+
   resources :expenses
 
   root :to => 'reports#index'
